@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=en-US>
+<head>
+<title>My First Website!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial scale=1">
+<style>
+*{/*some how effects all and cannot be overwritten*/
+  box-sizing: border-box;/* shifts the article as is?*/
+ 
+}
+body{
+background-color:blue;}
+
+header{background-color:red;
+    	color:white;
+        padding:40 px;
+        text-allign:center;
+}
+nav{background-color:red;
+    	color:white;
+    	float:left;
+        padding:30px;
+        width:20%;
+        height:300px;/*not a better way appearnty the example did the same*/
+        
+}
+article{background-color:red;
+    	color:white;
+    float:left;
+    margin-left:10%;
+    padding:30px;
+    margin-right:00%;
+    width:50%;
+}
+aside{
+background-color:black;
+color:white;
+width:20%;
+height:300px;/*same as nav height*/
+float: right;}
+
+    /* Clear floats after the columns so the footer starts all the way to the left rather then indented by nav*/
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    footer{
+    width:100%;
+    text-allign:center;
+    background-color:white;
+    color:black;
+    }
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article, aside {
+    width: 100%;
+    height: auto;
+  }
+}
+.second-article {/*margin=0; classes overwrite style?*/
+  padding: 5px;
+}
+
+ .second-article > h1,.nest {
+  margin: 10px;
+  padding: 5px;
+}
+
+.nest {
+
+  background: blue;
+}
+
+.nest > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style>
+</head>
+<body >
+<header>
+	<h1 id="top">My First Website</h1>
+</header>
+<section>
+<nav>
+	<p> this is the nav</p> <hr>
+    <ol>
+    	<li><a href="#top">top of the page</a></li>
+        <li><a href="#bottom">bottom of the page</a></li>
+        <li><a href="https://www.w3schools.com/code/tryit.asp?filename=GMNTY80SD91R#pg2">next page</a></li>
+    </ol>
+</nav> <aside>
+    <p>this is my aside</p>
+    </aside>
+<article>
+	<p> this is the article section. a;dhf;aioewfn ab;u a;n rauh baklasdffa efaeufihaneiuf eaiug lah lauifh aljgghnoiauncwoaieufnauieghawle kjghmalghanleiwufal euighnaewi uffacnweoiufaceiuanerjg a;eoig</p>
+    </article>
+  <article class="nest"></article><!-- how to create a blue break between articles?-->
+    <article class="second-article"><hr><h1>my second article eafun aeiuafnoai ugnhanliue lskdaf a;ldkj ;aklsjf ;la k;ajf a;lfkj algjkh afkljh adflkjh asdlfkjh aljkdfh asldkfj halkdjf haljkd fhalkdsj fhkljdsfh alskd fhadsk fhaskldjf halksdjf hadjkh fajklf haldfkjf hasldkfj hasldkfj hasldkjf halskjd fhlskdjf halskdjff halkdj halkdfj halkdj fh fmaiuefga</h1>
+    	<article class="nest">
+        <h2>wow awuiefhawuiefhawoeuhg apoiapmiogau gwaeufam kajhf laefh lajkefh lefha uwief halkjefha liwuefn lkehf laieufnlskdjffh awleiufa eljkfanleffuha</h2>
+        <p >you can nest articles wioeaufnwoauiefha wiueg oiu aowuieh noiuag noiueam aiourani ufhaiefuawoiuemfcnaweiu awuif maweiuf</p> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p >hello</p>
+        </article>
+    </article></section>
+    
+<footer>
+	<p id="bottom">mailto</p>
+</body>
+</html>
