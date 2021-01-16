@@ -2,10 +2,36 @@
 <html lang=en-US>
 <head>
 <title>The Boys</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial scale=1">
 <style>
 body{
 	background-color:gray;
 }
+	nav{background-color:red;
+    	color:white;
+    	float:left;
+        padding:30px;
+        width:20%;
+        height:300px;/*not a better way appearnty the example did the same*/
+        
+}
+	@media (max-width: 600px) {
+  nav, article, aside {
+    width: 100%;
+    height: auto;
+  }
+}
+	aside{
+		width:20%;
+		background-color:black;
+	}
+	article{
+		background-color:white;
+		float:center;
+		width:60%;
+	}
+	
 </style>
 </head>
 <body>
@@ -13,9 +39,18 @@ body{
 	<h1><em>The Boys!!!!</em></h1>
 </header>
 <nav>
-	<p>this is the nav</p>
+	<p> this is the nav</p> <hr>
+    <ol>
+    	<li><a href="#top">top of the page</a></li>
+        <li><a href="#bottom">bottom of the page</a></li>
+        <li><a href="/My Website/Second_page.html">next page</a></li>
+	    <li><a href="/My Website/Gallory_Boys.html">Gallory of the Boys</a></li>
+    </ol>
 </nav>
+	<aside>
+		<p>This is is our gallory. Our comendment to what we've done & a place to store the crazy shit we'll do in the future</p><hr>
 <article>
-	<img src=
+	<img src="/IMG-1753.PNG" alt="This is the way" width:"80%">
+	
 </body>
 </html>
