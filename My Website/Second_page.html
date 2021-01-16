@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>second page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial scale=1">
 <style>
+  nav{background-color:red;
+    	color:white;
+    	float:left;
+        padding:30px;
+        width:20%;
+        height:300px;/*not a better way appearnty the example did the same*/
+        
+}
 /* Style the element with the id "myHeader" */
 #myHeader {
   background-color: lightblue;
@@ -16,10 +27,25 @@
   color: white;
   padding: 10px;
 } 
+  @media (max-width: 600px) {
+  nav, article, aside {
+    width: 100%;
+    height: auto;
+  }
+}
+  
 </style>
 </head>
 <body>
-
+<nav>
+	<p> this is the nav</p> <hr>
+    <ol>
+    	<li><a href="#top">top of the page</a></li>
+        <li><a href="#bottom">bottom of the page</a></li>
+        <li><a href="/My Website/Second_page.html">next page</a></li>
+	    <li><a href="/My Website/Gallory_Boys.html">Gallory of the Boys</a></li>
+    </ol>
+</nav>
 <h2>Difference Between Class and ID</h2>
 <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
 
